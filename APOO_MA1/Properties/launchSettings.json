@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "APOO_MA1": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

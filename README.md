@@ -29,6 +29,7 @@ Após carregar o grafo, você pode escolher as operações disponíveis no menu 
 O arquivo de entrada deve conter a quantidade de vértices na primeira linha, seguida pelas arestas, onde cada linha contém três valores: ID do vértice de origem, ID do vértice de destino e o peso da aresta. 
 Exemplo:
 
+   ```bash
 4
 0 1 10
 1 2 5

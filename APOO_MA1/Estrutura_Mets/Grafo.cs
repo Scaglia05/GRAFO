@@ -66,12 +66,17 @@ public class Grafo {
 
     // Retorna o vértcie oposto de uma aresta em relação a um vértice dado
     public Vertice Opposite(Vertice v, Aresta a) {
-        return a.Origem == v ? a.Destino : a.Origem;
+        if (a.Origem == v) return a.Destino;
+        if (a.Destino == v) return a.Origem;
+        return null; // Ou lançar uma exceção
     }
 
     // Verifica se dois vérticis são adjacentes no grafo
     public bool AreAdjacente(Vertice v, Vertice p) {
-        return v.ListArestas.Exists(a => a.Origem == p || a.Destino == p);
+        return v.ListArestas.Any(a =>
+            (a.Origem == v && a.Destino == p) ||
+            (a.Origem == p && a.Destino == v)
+        );
     }
 
     // Substitue o valor de um vérticie

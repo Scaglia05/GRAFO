@@ -176,7 +176,7 @@ class Program {
     }
 
     static void MostrarEndVertices(Grafo grafo) {
-        Console.Write("ID da aresta (origem destino): ");
+        Console.Write("ID da aresta (origem, destino): ");
         int origem = int.Parse(Console.ReadLine());
         int destino = int.Parse(Console.ReadLine());
 
@@ -192,11 +192,13 @@ class Program {
     static void MostrarOpposto(Grafo grafo) {
         Console.Write("ID do vértice: ");
         int id = int.Parse(Console.ReadLine());
-        Console.Write("ID da aresta (origem destino): ");
+        Console.Write("ID da aresta (origem, destino): ");
+
         int origem = int.Parse(Console.ReadLine());
         int destino = int.Parse(Console.ReadLine());
 
         var aresta = grafo.ListArestas.FirstOrDefault(a => a.Origem.Id == origem && a.Destino.Id == destino);
+
         if (aresta != null && grafo.Dictonaryvertices.ContainsKey(id)) {
             var oposto = grafo.Opposite(grafo.Dictonaryvertices[id], aresta);
             Console.WriteLine($"Vértice oposto: {oposto.Id}");

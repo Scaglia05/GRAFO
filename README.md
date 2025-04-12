@@ -19,5 +19,19 @@ Este projeto implementa uma aplicação para manipulação e análise de grafos,
 
 ## Como Usar
 
-1. Clone este repositório:
-   ```bash
+1. Clone este repositório;
+2. Abra o projeto na sua IDE preferida e execute a aplicação.O programa irá solicitar o caminho do arquivo de entrada para carregar o grafo, no formato de um arquivo .txt.
+Após carregar o grafo, você pode escolher as operações disponíveis no menu para manipular e analisar o grafo.
+
+
+
+# Exemplo de Arquivo de Entrada
+O arquivo de entrada deve conter a quantidade de vértices na primeira linha, seguida pelas arestas, onde cada linha contém três valores: ID do vértice de origem, ID do vértice de destino e o peso da aresta. 
+Exemplo:
+
+4
+0 1 10
+1 2 5
+2 3 2
+0 3 15
+

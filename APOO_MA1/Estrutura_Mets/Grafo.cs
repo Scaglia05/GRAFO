@@ -68,7 +68,7 @@ public class Grafo {
     public Vertice Opposite(Vertice v, Aresta a) {
         if (a.Origem == v) return a.Destino;
         if (a.Destino == v) return a.Origem;
-        return null; // Ou lançar uma exceção
+        return null;
     }
 
     // Verifica se dois vérticis são adjacentes no grafo
